@@ -8,7 +8,7 @@ This project is based on my Master of Science Thesis which is titled "Pore Scale
 
 For running the project, you should follow the next instructions:
 1. Download the repository on your PC. 
-2. Then please copy and paste the **directory** of defined porous medium "200_200_Periodic.bmp" on your PC in line number 38 of "Relative_Permeability_Porous_Media.m" code (It's already "C:\Users\SONY\Desktop\LBM Study\Porous Media\200_200_Periodic.bmp"). 
-3. For changing the Wettability value to desired one you can change the coefficient of formula in line number 98 of code based on column "D" of uploaded excel file, named "Wettability" for any desired value of contact angle (The coefficient is already set to 0.5863 for contact angle of 30 degrees). 
+2. Then please copy and paste the **directory** of defined porous medium "200_200_Periodic.bmp" on your PC in line number 39 of "Relative_Permeability_Porous_Media.m" code (It's already "C:\Users\SONY\Desktop\LBM Study\Porous Media\200_200_Periodic.bmp"). 
+3. For defining the value of Wettability of the wet phase to desired one (0-180 degree) you can change it in line number 18 of the code. The wettability is defind as the contact angle of a droplet on a solid surface.  
 4. For setting the saturation value of Wet Phase you can change it in line number 17 of the code, and the non-Wet saturation will be updated automatically. 
 5. Then you can run the code.
