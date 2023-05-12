@@ -11,14 +11,3 @@ For running the project, you should follow the following instructions:
 3. For changing the Wettability value to desired one you can change the coefficient of formula in line number 98 of code based on column "D" of uploaded excel file, named "Wetability" for any desired value of contact angle (The coefficient is already set as 0.5863 for contact angle of 30 degrees). 
 4. For setting the saturation value of Wet Phase you can change it in line number 17 of the code, and the Non-Wet saturation will be updated automatically. 
 5. Then you can run the code.
-
-
-Extra Explanation:
-
-    For training the model "Horses or Humans" dataset which is prepared by Laurence Moroney (Instructor of Coursera) is used.
-    This dataset contains over a thousand images of horses and humans . Some of the images are showed to get a better sense of what they look like.
-    ImageDataGenerator class is used to prepare the dataset, so it can be fed to a convolutional neural network.
-    The model is developed through TensorFlow, and totally 5 Convolution layers are used (The model architecture can be checked via model.summary()).
-    The model is trained with "binary_crossentropy" loss and "RMSprop" optimizer.
-    Preprocessing of images is done by ImageDataGenerator; the images are auto-labeled, and they are fed to the model in baches of 128 and size of 300*300
-    Training is performed for 15 epochs
