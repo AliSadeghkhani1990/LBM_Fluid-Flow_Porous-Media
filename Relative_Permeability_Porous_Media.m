@@ -13,10 +13,11 @@ maxT=200000;
 tplot=100;
 conv=1*10^-9;
 
-%saturation of the fluid
+%saturation and wettability of the wet phase
 sw=0.8;
-snw=1-sw;
+contact_angle=30;
 
+snw=1-sw;
 % Prameters data
 xmin=1; xmax=200; ymin=1; ymax=200;
 AA=zeros(xmax,ymax);
@@ -95,7 +96,10 @@ alpha=0.75*sigma/(IntWidth*phistar^4);
 kappa=0.5*alpha*(IntWidth*phistar)^2;
 
 %%Wettability Spesification
-omega=0.5863*(2*kappa*alpha)^.5;
+angle=deg2rad(contact_angle);
+beta=acos(sin(angle)^2);
+coef=2*sign(pi/2-angle)*(cos(beta/3)*(1-cos(beta/3)))^0.5;
+omega=coef*(2*kappa*alpha)^.5;
 
 %%Initialize near neighbors and order parameters phi
 phin=phi0(:,:);
