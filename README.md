@@ -5,10 +5,13 @@ Project Description:
 This project is based on my Master of Science Thesis which is titeld "Pore  Scale  Simulation  of  Wettability  and  Interfacial  Tension  on  Two  Phase  Flow through Porous Media by Phase Field Free Energy Lattice Boltzmann Method". In this project two-phase flow, with defined Wettability and Interfacial Tension (IFT), is considred in 2D porous medium; the proposed 2D porous medium is uploaded as "200_200_Periodic" name in this repository. In addition, for simulating various Wettability-amount an Excel file is uploaded as .... which should be used which the procedure is described in following section. 
 
 How to Run the Model:
-38
-For running the project, you should download the repository on your PC. Then please copy and paste the directory of defined porous medium "200_200_Periodic.bmp" on your PC in line number 38 of "Relative_Permeability_Porous_Media.m" code. For changing the Wettability value to desired one you can change the coefficient of formula in line number 98 of code based on column "D" of excel file for any desired value of contact angle (The coefficient is already set as 0.5863 for contact angle of 30 degrees).   simply open it via Colab, then running the first cell; it will automatically download the dataset, auto-label them, and finally after pre- processing of images they will be fed into the model and training is performed. (Note: Some of the details related to this program are listed in "Extra Explanation").
+For running the project, you should follow the following instructions:
+1. Download the repository on your PC. 
+2. Then please copy and paste the directory of defined porous medium "200_200_Periodic.bmp" on your PC in line number 38 of "Relative_Permeability_Porous_Media.m" code (It's already "C:\Users\SONY\Desktop\LBM Study\Porous Media\200_200_Periodic.bmp"). 
+3. For changing the Wettability value to desired one you can change the coefficient of formula in line number 98 of code based on column "D" of uploaded excel file, named "Wetability" for any desired value of contact angle (The coefficient is already set as 0.5863 for contact angle of 30 degrees). 
+4. For setting the saturation value of Wet Phase you can change it in line number 17 of the code, and the Non-Wet saturation will be updated automatically. 
+5. Then you can run the code.
 
-You can check the model by running "Model Prediction" which is prepared at the end of program. This code will allow you to choose one or more files from your file system, upload them, and run them through the model, giving an indication of whether the object is a horse or a human. please note that as this project is simply designed with low number of training images, it is not always correct.
 
 Extra Explanation:
 
