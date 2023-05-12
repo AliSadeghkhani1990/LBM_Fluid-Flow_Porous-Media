@@ -95,7 +95,7 @@ alpha=0.75*sigma/(IntWidth*phistar^4);
 kappa=0.5*alpha*(IntWidth*phistar)^2;
 
 %%Wettability Spesification
-omega=0.6*(2*kappa*alpha)^.5;
+omega=0.5863*(2*kappa*alpha)^.5;
 
 %%Initialize near neighbors and order parameters phi
 phin=phi0(:,:);
